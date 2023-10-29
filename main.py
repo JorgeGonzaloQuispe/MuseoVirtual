@@ -15,7 +15,7 @@ platform = Entity(model="cube", collider="box", texture="piso", scale=(3000, 0, 
 
 #Cubo
 Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(250, 250, 0))#pared derecha
-Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(500, 250, 0))#pared derecha
+Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(500, 250, 0))#pared derecha 
 
 app.run()
 
