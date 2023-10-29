@@ -13,8 +13,9 @@ def input(key):
 # Piso
 platform = Entity(model="cube", collider="box", texture="piso", scale=(3000, 0, 3000), position=(0, 10, 0))
 
-Entity(model="cube", collider="mesh", texture="pared", scale=250,position=(250, 0, 0))#pared derecha
-Entity(model="cube", collider="mesh", texture="techo", scale=250,position=(0, 250, 0))#techo
-Entity(model="cube", collider="mesh", texture="pared", scale=250,position=(-250, 0, 0))# pared izquierda
-Entity(model="cube", collider="mesh", texture="pared", scale=250,position=(0, 0, 250))
+#Cubo
+Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(250, 250, 0))#pared derecha
+Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(500, 250, 0))#pared derecha
+
 app.run()
+
