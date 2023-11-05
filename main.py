@@ -75,4 +75,5 @@ def update():
 Entity(model="vicuna_peru.glb", collider='box', position=(1000, 0, 1000))
 
 #Colocar aqui sus cambios 
+
 app.run()
