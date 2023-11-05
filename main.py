@@ -75,5 +75,12 @@ def update():
 Entity(model="vicuna_peru.glb", collider='box', position=(1000, 0, 1000))
 
 #Colocar aqui sus cambios 
-
+#Pared enfrente:
+autor= Entity(model="cube",scale=(0,350,200), texture="Pancho.jpg",collider="box",position=(-490,250,-320))
+cua1= Entity(model="cube",scale=(0,180,150), texture="cua1.jpg",collider="box",position=(-490,350,-80))
+cua2= Entity(model="cube",scale=(0,180,150), texture="cua2.jpg",collider="box",position=(-490,130,-80))
+cua3= Entity(model="cube",scale=(0,180,150), texture="cua3.jpg",collider="box",position=(-490,350,135))
+cua4= Entity(model="cube",scale=(0,180,150), texture="cua4.jpg",collider="box",position=(-490,130,135))
+cua5= Entity(model="cube",scale=(0,180,150), texture="cua5.jpg",collider="box",position=(-490,350,340))
+cua6= Entity(model="cube",scale=(0,180,150), texture="cua6.jpg",collider="box",position=(-490,130,340))
 app.run()
