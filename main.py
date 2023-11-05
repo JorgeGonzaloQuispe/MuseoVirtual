@@ -23,11 +23,10 @@ pygame.mixer.music.load(file_path)
 # Reproduce el archivo en un bucle (-1 para reproducir en bucle)
 pygame.mixer.music.play(-1)
 
-# Resto de tu código de Ursina...
-
 # Asegúrate de manejar la lógica de la aplicación Ursina y renderizar la ventana.
 def update():
     pass
+
 
 player = FirstPersonController(speed=150, position=(50, 0, 50), scale=9)  # Nueva posición del jugador
 Sky()
@@ -63,8 +62,7 @@ ceiling.y = 500
 ceiling.z = 0
 ceiling.x = 0
 
-#Colocar aqui sus cambios 
-cuadro = Entity(model="cube", scale=(2,200,200),texture="independencia_1821.jpg",collider='box',position=(-490,150,150))
 
+#Colocar aqui sus cambios 
 
 app.run()
