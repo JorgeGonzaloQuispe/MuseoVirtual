@@ -62,7 +62,6 @@ ceiling.y = 500
 ceiling.z = 0
 ceiling.x = 0
 
-
 #Colocar aqui sus cambios 
 
 app.run()
