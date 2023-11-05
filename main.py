@@ -41,25 +41,25 @@ platform = Entity(model="cube", collider="box", texture="piso", scale=(3000, 1, 
 
 # Pared derecha
 wall_1 = Entity(model='cube', scale=(1000, 1000, 10), color=color.white, texture = "wall4.jpg", collider='box')
-wall_1.x = 0  # Ubicar la tercera pared
+wall_1.x = 0  
 wall_1.z = -500
 wall_1.y = 0
 
 # Pared izquierda
 wall_2 = Entity(model='cube', scale=(1000, 1000, 10), color=color.white, texture = "wall4.jpg", collider='box')
-wall_2.x = 0  # Ubicar la tercera pared
+wall_2.x = 0  
 wall_2.z = 500
 wall_2.y = 0
 
 # Pared enfrente
 wall_2 = Entity(model='cube', scale=(10, 1000, 1000), color=color.white, texture = "wall4.jpg", collider='box')
-wall_2.x = -500  # Ubicar la tercera pared
+wall_2.x = -500  
 wall_2.z = 0
 wall_2.y = 0
 
 # Techo del museo
 ceiling = Entity(model='cube', scale=(1000, 10, 1000), color=color.white, texture = "wall1", collider='box')
-ceiling.y = 500  # Ubicar el techo
+ceiling.y = 500  
 ceiling.z = 0
 ceiling.x = 0
 
