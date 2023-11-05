@@ -1,0 +1,3 @@
+En su consola agreguen los siguientes comandos:
+pip install pydub
+pip install pygame

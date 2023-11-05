@@ -1,24 +1,70 @@
 from ursina import *
+import pygame
+from pydub import AudioSegment
 from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
 
-player = FirstPersonController(speed=80, position=(-80, 9, -240), scale=9)
+# Carga el archivo MP3
+audio = AudioSegment.from_mp3("musica.mp3")
+
+# Exporta el archivo a formato WAV
+audio.export("flordelacanela.wav", format="wav")
+
+# Carga el archivo WAV
+file_path = "flordelacanela.wav"
+
+# Inicializa el módulo de audio de pygame
+pygame.mixer.init()
+
+# Carga el archivo en pygame
+pygame.mixer.music.load(file_path)
+
+# Reproduce el archivo en un bucle (-1 para reproducir en bucle)
+pygame.mixer.music.play(-1)
+
+# Resto de tu código de Ursina...
+
+# Asegúrate de manejar la lógica de la aplicación Ursina y renderizar la ventana.
+def update():
+    pass
+
+player = FirstPersonController(speed=150, position=(50, 0, 50), scale=9)  # Nueva posición del jugador
 Sky()
 
 def input(key):
     if key == 'escape':
         quit()
 
-# Piso
-platform = Entity(model="cube", collider="box", texture="piso", scale=(3000, 0, 3000), position=(0, 10, 0))
+# Crear el suelo del museo
+platform = Entity(model="cube", collider="box", texture="piso", scale=(3000, 1, 3000), position=(0, 0, 0))
 
-#Cubo
-#Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(250, 250, 0))#pared derecha
-#Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(500, 250, 0))#pared derecha 
-#pared derecha
-Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(500, 250, 0))#pared derecha
-Entity(model="cube", collider="mesh", texture="holi", scale=250,position=(500, 250, 0))#pared derecha 
+# Pared derecha
+wall_1 = Entity(model='cube', scale=(1000, 1000, 10), color=color.white, texture = "wall4.jpg", collider='box')
+wall_1.x = 0  
+wall_1.z = -500
+wall_1.y = 0
+
+# Pared izquierda
+wall_2 = Entity(model='cube', scale=(1000, 1000, 10), color=color.white, texture = "wall4.jpg", collider='box')
+wall_2.x = 0  
+wall_2.z = 500
+wall_2.y = 0
+
+# Pared enfrente
+wall_2 = Entity(model='cube', scale=(10, 1000, 1000), color=color.white, texture = "wall4.jpg", collider='box')
+wall_2.x = -500  
+wall_2.z = 0
+wall_2.y = 0
+
+# Techo del museo
+ceiling = Entity(model='cube', scale=(1000, 10, 1000), color=color.white, texture = "wall1", collider='box')
+ceiling.y = 500  
+ceiling.z = 0
+ceiling.x = 0
+
+#Colocar aqui sus cambios 
+cuadro = Entity(model="cube", scale=(2,200,200),texture="independencia_1821.jpg",collider='box',position=(-490,150,150))
+
 
 app.run()
-
