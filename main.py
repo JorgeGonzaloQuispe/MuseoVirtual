@@ -28,7 +28,7 @@ def update():
     pass
 
 
-player = FirstPersonController(speed=150, position=(50, 0, 50), scale=9)  # Nueva posición del jugador
+player = FirstPersonController(speed=150, position=(50, 0, 50), scale=15)  # Nueva posición del jugador
 Sky()
 
 def input(key):
@@ -61,6 +61,18 @@ ceiling = Entity(model='cube', scale=(1000, 10, 1000), color=color.white, textur
 ceiling.y = 500  
 ceiling.z = 0
 ceiling.x = 0
+
+#Colocando la estatua
+estatua = Entity(model="esta.glb", scale=(50,50,50), collider='box')
+def update():
+    estatua.rotation_y += 1
+
+#Funcion para movimientos horizontales
+persona = Entity(model="persona.glb", scale=(10,10,10), collider='box', position=(300, 21, 20))
+def update():
+    persona.rotation_y += 1 #Solo seria sobre su propio radio
+
+Entity(model="vicuna_peru.glb", collider='box', position=(1000, 0, 1000))
 
 #Colocar aqui sus cambios 
 
