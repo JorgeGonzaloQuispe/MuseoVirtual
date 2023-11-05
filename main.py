@@ -1,7 +1,33 @@
 from ursina import *
+import pygame
+from pydub import AudioSegment
 from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
+
+# Carga el archivo MP3
+audio = AudioSegment.from_mp3("musica.mp3")
+
+# Exporta el archivo a formato WAV
+audio.export("flordelacanela.wav", format="wav")
+
+# Carga el archivo WAV
+file_path = "flordelacanela.wav"
+
+# Inicializa el módulo de audio de pygame
+pygame.mixer.init()
+
+# Carga el archivo en pygame
+pygame.mixer.music.load(file_path)
+
+# Reproduce el archivo en un bucle (-1 para reproducir en bucle)
+pygame.mixer.music.play(-1)
+
+# Resto de tu código de Ursina...
+
+# Asegúrate de manejar la lógica de la aplicación Ursina y renderizar la ventana.
+def update():
+    pass
 
 player = FirstPersonController(speed=150, position=(50, 0, 50), scale=9)  # Nueva posición del jugador
 Sky()
