@@ -196,7 +196,7 @@ persona = Entity(model="persona.glb", scale=(10,10,10), collider='box', position
 def update():
     persona.rotation_y += 1 #Solo seria sobre su propio radio
 
-Entity(model="vicuna_peru.glb", collider='box', position=(1000, 0, 1000))
+Entity(model="vicuna_peru.glb", collider='box', position=(1000, 20, 1000))
 
 #Colocar aqui sus cambios 
 #Pared enfrente:
@@ -214,10 +214,24 @@ cande = Entity(model="candelabro.glb", scale=(50,50,50), collider='box',position
 def update():
     cande.rotation_y += 1 #Solo seria sobre su propio radio
 # Historia
-Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(10,10,10), collider='box',position=(70,0,-960))
+Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(15,15,15), collider='box',position=(70,-90,-930))
 Simon_Bolivar.rotation_y = 180 
-Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(10,10,10), collider='box',position=(70,100,-800))
-Jose_San_Martin.rotation_y=180
+Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(16,16,16), collider='box',position=(70,140,-1190))
+Jose_San_Martin.rotation_y=160
+
+# fachada
+wall_2 = Entity(model='cube', scale=(1, 480, 400), color=color.white, texture = "MuseoFachada.jpg", collider='box',position=(505,140,0))
+wall_2 = Entity(model='cube', scale=(10, 135, 400), color=color.white, texture = "wall4.jpg", collider='box',position=(505,430,0))
+wall_2 = Entity(model='cube', scale=(30, 100, 300), color=color.white, texture = "nombre.jpg", collider='box',position=(524,410,0))
+wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture = "wall4.jpg", collider='box',position=(505,250,595))
+wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture = "wall4.jpg", collider='box',position=(505,250,-595))
+
+# Cuarto de yulizza - gastronomia
+cevich= Entity(model="cube",scale=(5,150,200), texture="ceviche.jpg",collider="box",position=(140,380,996))
+cevich.rotation_y = 90 
+adov= Entity(model="cube",scale=(5,150,200), texture="adobo.jpg",collider="box",position=(360,380,996))
+adov.rotation_y = 90 
+
 app.run()
 
 
