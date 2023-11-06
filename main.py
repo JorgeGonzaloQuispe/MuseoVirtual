@@ -226,12 +226,6 @@ wall_2 = Entity(model='cube', scale=(30, 100, 300), color=color.white, texture =
 wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture = "wall4.jpg", collider='box',position=(505,250,595))
 wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture = "wall4.jpg", collider='box',position=(505,250,-595))
 
-# Cuarto de yulizza - gastronomia
-cevich= Entity(model="cube",scale=(5,150,200), texture="ceviche.jpg",collider="box",position=(140,380,996))
-cevich.rotation_y = 90 
-adov= Entity(model="cube",scale=(5,150,200), texture="adobo.jpg",collider="box",position=(360,380,996))
-adov.rotation_y = 90 
-
 app.run()
 
 
