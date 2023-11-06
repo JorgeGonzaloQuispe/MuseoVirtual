@@ -1,3 +1,4 @@
+from turtle import position
 from ursina import *
 import pygame
 from pydub import AudioSegment
@@ -110,7 +111,6 @@ wall_1_111.y = 370
 ##################################################################
 # Pared derecha cuarto principal
 
-
 wall_1_1 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "wall4.jpg", collider='box')
 wall_1_1.x = -350/2
 wall_1_1.z = 500
@@ -187,7 +187,7 @@ ceiling.z =0
 ceiling.x = 0
 
 #Colocando la estatua
-estatua = Entity(model="esta.glb", scale=(50,50,50), collider='box')
+estatua = Entity(model="esta.glb", scale=(100,100,100), collider='box')
 def update():
     estatua.rotation_y += 1
 
@@ -207,4 +207,19 @@ cua3= Entity(model="cube",scale=(0,180,150), texture="cua3.jpg",collider="box",p
 cua4= Entity(model="cube",scale=(0,180,150), texture="cua4.jpg",collider="box",position=(-490,130,135))
 cua5= Entity(model="cube",scale=(0,180,150), texture="cua5.jpg",collider="box",position=(-490,350,340))
 cua6= Entity(model="cube",scale=(0,180,150), texture="cua6.jpg",collider="box",position=(-490,130,340))
+
+
+# candelabros de los cuartos
+cande = Entity(model="candelabro.glb", scale=(50,50,50), collider='box',position=(0,500,0))
+def update():
+    cande.rotation_y += 1 #Solo seria sobre su propio radio
+# Historia
+Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(10,10,10), collider='box',position=(70,0,-960))
+Simon_Bolivar.rotation_y = 180 
+Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(10,10,10), collider='box',position=(70,100,-800))
+Jose_San_Martin.rotation_y=180
 app.run()
+
+
+
+
