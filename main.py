@@ -227,7 +227,3 @@ wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture =
 wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture = "wall4.jpg", collider='box',position=(505,250,-595))
 
 app.run()
-
-
-
-
