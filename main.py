@@ -38,6 +38,8 @@ def input(key):
 # Crear el suelo del museo
 platform = Entity(model="cube", collider="box", texture="piso", scale=(3000, 1, 3000), position=(0, 0, 0))
 
+
+##################################################################
 # Pared izquierda cuarto principal
 
 wall_1_1 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "wall4.jpg", collider='box')
@@ -105,17 +107,73 @@ wall_1_111.x = 75
 wall_1_111.z = -505
 wall_1_111.y = 370
 
+##################################################################
 # Pared derecha cuarto principal
-wall_2_1 = Entity(model='cube', scale=(1000, 1000, 10), color=color.white, texture = "wall4.jpg", collider='box')
-wall_2_1.x = 0  
-wall_2_1.z = 500
-wall_2_1.y = 0
-# Pared derecha cuarto al lado derecho
-wall_2_2 = Entity(model='cube', scale=(1000, 1000, 10), color=color.white, texture = "wall4.jpg", collider='box')
-wall_2_2.x = 0  
-wall_2_2.z = 1000
-wall_2_2.y = 0
 
+
+wall_1_1 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "wall4.jpg", collider='box')
+wall_1_1.x = -350/2
+wall_1_1.z = 500
+wall_1_1.y = 0
+
+wall_1_1_1= Entity(model='cube', scale=(150, 250, 5), color=color.white, texture = "wall4.jpg", collider='box')
+wall_1_1_1.x = -425
+wall_1_1_1.z = 500
+wall_1_1_1.y = 370
+
+wall_1_11 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "wall4.jpg", collider='box')
+wall_1_11.x = 325
+wall_1_11.z = 500
+wall_1_11.y = 0
+
+wall_1_111= Entity(model='cube', scale=(150, 250, 5), color=color.white, texture = "wall4.jpg", collider='box')
+wall_1_111.x = 75
+wall_1_111.z = 500
+wall_1_111.y = 370
+
+# Cuarto 1 y 2 izquierdo
+
+# pared 
+wall_1_1_2 = Entity(model='cube', scale=(1000, 1000, 10), color=color.white, texture = "cuartoizquierdo.jpg", collider='box')
+wall_1_1_2.x = 0
+wall_1_1_2.z = 1000 # mover a la derecha 
+wall_1_1_2.y = 0
+
+
+# pared de cuarto 1
+wall_1_1_3 = Entity(model='cube', scale=(10, 1000, 500), color=color.white, texture = "cuartoizquierdo.jpg", collider='box')
+wall_1_1_3.x = -500 
+wall_1_1_3.z = 750
+wall_1_1_3.y = 0
+
+
+# pared separador cuarto 1 y 2
+wall_1_1_3 = Entity(model='cube', scale=(10, 1000, 500), color=color.white, texture = "cuartoizquierdo.jpg", collider='box')
+wall_1_1_3.x = 0 
+wall_1_1_3.z = 750
+wall_1_1_3.y = 0
+# interior color cuartos 1 y 2 , cuartos izquierdos
+wall_1_1 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "cuartoizquierdo.jpg", collider='box')
+wall_1_1.x = -350/2
+wall_1_1.z = 505
+wall_1_1.y = 0
+
+wall_1_1_1= Entity(model='cube', scale=(150, 250, 5), color=color.white, texture = "cuartoizquierdo.jpg", collider='box')
+wall_1_1_1.x = -425
+wall_1_1_1.z = 505
+wall_1_1_1.y = 370
+
+wall_1_11 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "cuartoizquierdo.jpg", collider='box')
+wall_1_11.x = 325
+wall_1_11.z = 505
+wall_1_11.y = 0
+
+wall_1_111= Entity(model='cube', scale=(150, 250, 5), color=color.white, texture = "cuartoizquierdo.jpg", collider='box')
+wall_1_111.x = 75
+wall_1_111.z = 505
+wall_1_111.y = 370
+
+#######################################
 # Pared enfrente
 wall_2 = Entity(model='cube', scale=(10, 1000, 1000), color=color.white, texture = "wall4.jpg", collider='box')
 wall_2.x = -500  
