@@ -218,11 +218,7 @@ cua6= Entity(model="cube",scale=(0,180,150), texture="cua6.jpg",collider="box",p
 cande = Entity(model="candelabro.glb", scale=(50,50,50), collider='box',position=(0,500,0))
 def update():
     cande.rotation_y += 1 #Solo seria sobre su propio radio
-# Historia
-Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(15,15,15), collider='box',position=(70,-90,-930))
-Simon_Bolivar.rotation_y = 180 
-Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(16,16,16), collider='box',position=(70,140,-1190))
-Jose_San_Martin.rotation_y=160
+
 
 # fachada
 wall_2 = Entity(model='cube', scale=(1, 480, 400), color=color.white, texture = "MuseoFachada.jpg", collider='box',position=(505,140,0))
@@ -235,16 +231,16 @@ wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture =
 ##############################################################3
 #Cuarto inmersivo de danzas tipicas peruanas
 #Marinera
-plano_1 = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-245,235,-980))
-a = Animation(gif, parent=plano_1, rotation_y= 180, scale = (50,50,5)) 
+plano_1 = Entity(model='plane', scale=(9.5, 9.5, 10) ,color=color.white, collider='box', position=(-245,235,-980))
+a = Animation(gif, parent=plano_1, rotation_y= 180, scale = (50,50,10)) 
 
 #Contradanza
-plano_2 = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-10,235,-749))
-b = Animation(gif2, parent=plano_2, rotation_y= 90, position=(0,0,0), scale = (50, 50, 5)) 
+plano_2 = Entity(model='plane', scale=(9.5, 9.5, 10),color=color.white, collider='box', position=(-10,235,-749))
+b = Animation(gif2, parent=plano_2, rotation_y= 90, position=(0,0,0), scale = (50, 50, 10)) 
 
 #Tondero
-plano_3 = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-490,235,-749))
-c = Animation(gif3, parent=plano_3, rotation_y= 270, position=(0,0,0), scale = (50, 50, 5)) 
+plano_3 = Entity(model='plane', scale=(9.5, 9.5, 10),color=color.white, collider='box', position=(-490,235,-749))
+c = Animation(gif3, parent=plano_3, rotation_y= 270, position=(0,0,0), scale = (50, 50, 10)) 
 
 #Techo
 #techo = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-245,490,-450))
@@ -254,7 +250,34 @@ c = Animation(gif3, parent=plano_3, rotation_y= 270, position=(0,0,0), scale = (
 ###Todo: mural 
 ##############################################################
 #Instrumentos musicales: fachada guitarra, castañuela, etc
+# agregado 10/11/2023
+# Cuarto de yulizza - gastronomia
+Ceviche_= Entity(model="cube",scale=(5,150,200), texture="ceviche.jpg",collider="box",position=(140,380,996)); Ceviche_.rotation_y = 90
+Adovo_= Entity(model="cube",scale=(5,150,200), texture="adobo.jpg",collider="box",position=(360,380,996));Adovo_.rotation_y = 90
+Ajiaco_=Entity(model="cube",scale=(5,150,200), texture="ajiaco.jpg",collider="box",position=(140,210,996));Ajiaco_.rotation_y = 90
+Causa_=Entity(model="cube",scale=(5,150,200), texture="causa.jpg",collider="box",position=(360,210,996));Causa_.rotation_y = 90
+Chupecamarones_=Entity(model="cube",scale=(5,150,200), texture="chupecamarones.jpg",collider="box",position=(502,380,856))
+Secocordero_=Entity(model="cube",scale=(5,150,200), texture="secocordero.jpg",collider="box",position=(502,380,636))
+Anticucho_=Entity(model="cube",scale=(5,150,200), texture="anticucho.jpg",collider="box",position=(502,210,856))
+Tacutacu_=Entity(model="cube",scale=(5,150,200), texture="tacutacu.jpg",collider="box",position=(502,210,636))
+Pachamanca_=Entity(model="cube",scale=(5,150,200), texture="pachamanca2.jpg",collider="box",position=(140,380,506));Pachamanca_.rotation_y = 90 
+Pachamanca_=Entity(model="cube",scale=(5,150,200), texture="pachamanca3.jpg",collider="box",position=(360,380,506));Pachamanca_.rotation_y = 90 
+Gastronomia_=Entity(model="cube",scale=(5,250,300), texture="pachamanca1.jpg",collider="box",position=(325,150,499));Gastronomia_.rotation_y = 90
+Gastronomia_=Entity(model="cube",scale=(5,210,140), texture="gastronomia1.jpg",collider="box",position=(80,370,499));Gastronomia_.rotation_y = 90
+Gastronomia_=Entity(model="cube",scale=(5,171,300), texture="gastronomia2.jpg",collider="box",position=(325,380,499));Gastronomia_.rotation_y = 90 
 
+# Cuarto de Gonzalo - Historia
+# estatuas
+# Historia
+Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(15,15,15), collider='box',position=(100,-90,-930));Simon_Bolivar.rotation_y = 180 
+Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(16,16,16), collider='box',position=(100,140,-1190));Jose_San_Martin.rotation_y=160
 
+# pinturas
+picture1_= Entity(model="cube",scale=(5,150,200), texture="picture1.jpg",collider="box",position=(140,380,-996)); picture1_.rotation_y = 90; 
+picture2_= Entity(model="cube",scale=(5,150,200), texture="picture2.jpg",collider="box",position=(360,380,-996));picture2_.rotation_y = 90
+picture3_=Entity(model="cube",scale=(5,150,200), texture="picture3.jpg",collider="box",position=(502,380,-856))
+picture4_=Entity(model="cube",scale=(5,150,200), texture="picture4.jpg",collider="box",position=(502,380,-636))
+picture5_=Entity(model="cube",scale=(5,150,200), texture="picture1.jpg",collider="box",position=(502,210,-856))
+picture6_=Entity(model="cube",scale=(5,150,200), texture="picture3.jpg",collider="box",position=(502,210,-636))
 
 app.run()
