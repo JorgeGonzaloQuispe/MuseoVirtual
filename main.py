@@ -247,8 +247,8 @@ plano_3 = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collid
 c = Animation(gif3, parent=plano_3, rotation_y= 270, position=(0,0,0), scale = (50, 50, 5)) 
 
 #Techo
-techo = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-245,490,-450))
-d = Animation(gif4, parent=techo, rotation_x= -270, scale = (50,50,5))
+#techo = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-245,490,-450))
+#d = Animation(gif4, parent=techo, rotation_x= -270, scale = (50,50,5))
 
 
 ###Todo: mural 
