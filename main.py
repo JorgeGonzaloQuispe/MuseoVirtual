@@ -6,6 +6,12 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
 
+#Gifs
+gif = "marinera.gif"
+gif2 = "contradanza.gif"
+gif3 = "tondero.gif"
+gif4 = "cielo.gif"
+
 # Carga el archivo MP3
 audio = AudioSegment.from_mp3("musica.mp3")
 
@@ -196,7 +202,6 @@ persona = Entity(model="persona.glb", scale=(10,10,10), collider='box', position
 def update():
     persona.rotation_y += 1 #Solo seria sobre su propio radio
 
-Entity(model="vicuna_peru.glb", collider='box', position=(1000, 20, 1000))
 
 #Colocar aqui sus cambios 
 #Pared enfrente:
@@ -235,4 +240,30 @@ Chupecamarones_=Entity(model="cube",scale=(5,150,200), texture="chupecamarones.j
 Secocordero_=Entity(model="cube",scale=(5,150,200), texture="secocordero.jpg",collider="box",position=(502,380,-636))
 Anticucho_=Entity(model="cube",scale=(5,150,200), texture="anticucho.jpg",collider="box",position=(502,210,-856))
 Tacutacu_=Entity(model="cube",scale=(5,150,200), texture="tacutacu.jpg",collider="box",position=(502,210,-636))
+
+##############################################################3
+#Cuarto inmersivo de danzas tipicas peruanas
+#Marinera
+plano_1 = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-245,235,-980))
+a = Animation(gif, parent=plano_1, rotation_y= 180, scale = (50,50,5)) 
+
+#Contradanza
+plano_2 = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-10,235,-749))
+b = Animation(gif2, parent=plano_2, rotation_y= 90, position=(0,0,0), scale = (50, 50, 5)) 
+
+#Tondero
+plano_3 = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-490,235,-749))
+c = Animation(gif3, parent=plano_3, rotation_y= 270, position=(0,0,0), scale = (50, 50, 5)) 
+
+#Techo
+#techo = Entity(model='plane', scale=(9.5, 9.5, 9.5), color=color.white, collider='box', position=(-245,490,-450))
+#d = Animation(gif4, parent=techo, rotation_x= -270, scale = (50,50,5))
+
+
+###Todo: mural 
+##############################################################
+#Instrumentos musicales: fachada guitarra, castañuela, etc
+
+
 app.run()
+
