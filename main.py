@@ -213,11 +213,6 @@ cua6= Entity(model="cube",scale=(0,180,150), texture="cua6.jpg",collider="box",p
 cande = Entity(model="candelabro.glb", scale=(50,50,50), collider='box',position=(0,500,0))
 def update():
     cande.rotation_y += 1 #Solo seria sobre su propio radio
-# Historia
-Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(15,15,15), collider='box',position=(70,-90,-930))
-Simon_Bolivar.rotation_y = 180 
-Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(16,16,16), collider='box',position=(70,140,-1190))
-Jose_San_Martin.rotation_y=160
 
 # fachada
 wall_2 = Entity(model='cube', scale=(1, 480, 400), color=color.white, texture = "MuseoFachada.jpg", collider='box',position=(505,140,0))
@@ -226,4 +221,18 @@ wall_2 = Entity(model='cube', scale=(30, 100, 300), color=color.white, texture =
 wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture = "wall4.jpg", collider='box',position=(505,250,595))
 wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture = "wall4.jpg", collider='box',position=(505,250,-595))
 
+
+
+# Cuarto de Gonzalo - Historia
+# estatuas
+Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(15,15,15), collider='box',position=(100,-90,-930));Simon_Bolivar.rotation_y = 180 
+Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(16,16,16), collider='box',position=(100,140,-1190));Jose_San_Martin.rotation_y=160
+
+# pinturas
+Ceviche_= Entity(model="cube",scale=(5,150,200), texture="ceviche.jpg",collider="box",position=(140,380,-996)); Ceviche_.rotation_y = 90; 
+Adovo_= Entity(model="cube",scale=(5,150,200), texture="adobo.jpg",collider="box",position=(360,380,-996));Adovo_.rotation_y = 90
+Chupecamarones_=Entity(model="cube",scale=(5,150,200), texture="chupecamarones.jpg",collider="box",position=(502,380,-856))
+Secocordero_=Entity(model="cube",scale=(5,150,200), texture="secocordero.jpg",collider="box",position=(502,380,-636))
+Anticucho_=Entity(model="cube",scale=(5,150,200), texture="anticucho.jpg",collider="box",position=(502,210,-856))
+Tacutacu_=Entity(model="cube",scale=(5,150,200), texture="tacutacu.jpg",collider="box",position=(502,210,-636))
 app.run()
