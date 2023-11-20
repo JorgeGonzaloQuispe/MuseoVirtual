@@ -206,13 +206,23 @@ def update():
 #Colocar aqui sus cambios 
 #Pared enfrente:
 autor= Entity(model="cube",scale=(0,350,200), texture="Pancho.jpg",collider="box",position=(-490,250,-320))
+nom= Entity(model="cube",scale=(0,80,120), texture="panchito.jpg",collider="box",position=(-490,450,-320))
+des= Entity(model="cube",scale=(0,80,140), texture="descripcion.jpg",collider="box",position=(-490,40,-320))
 cua1= Entity(model="cube",scale=(0,180,150), texture="cua1.jpg",collider="box",position=(-490,350,-80))
-cua2= Entity(model="cube",scale=(0,180,150), texture="cua2.jpg",collider="box",position=(-490,130,-80))
-cua3= Entity(model="cube",scale=(0,180,150), texture="cua3.jpg",collider="box",position=(-490,350,135))
-cua4= Entity(model="cube",scale=(0,180,150), texture="cua4.jpg",collider="box",position=(-490,130,135))
-cua5= Entity(model="cube",scale=(0,180,150), texture="cua5.jpg",collider="box",position=(-490,350,340))
-cua6= Entity(model="cube",scale=(0,180,150), texture="cua6.jpg",collider="box",position=(-490,130,340))
+mom1= Entity(model="cube",scale=(0,40,100), texture="obra.jpg",collider="box",position=(-490,245,-80))
 
+cua2= Entity(model="cube",scale=(0,180,150), texture="cua2.jpg",collider="box",position=(-490,130,-80))
+nom2= Entity(model="cube",scale=(0,40,100), texture="b.jpg",collider="box",position=(-490,20,-80))
+
+cua3= Entity(model="cube",scale=(0,180,150), texture="cua3.jpg",collider="box",position=(-490,350,135))
+nom3= Entity(model="cube",scale=(0,40,100), texture="d.jpg",collider="box",position=(-490,245,135))
+cua4= Entity(model="cube",scale=(0,180,150), texture="cua4.jpg",collider="box",position=(-490,130,135))
+nom4= Entity(model="cube",scale=(0,40,100), texture="e.jpg",collider="box",position=(-490,20,135))
+
+cua5= Entity(model="cube",scale=(0,180,150), texture="cua5.jpg",collider="box",position=(-490,350,340))
+nom5= Entity(model="cube",scale=(0,40,100), texture="c.jpg",collider="box",position=(-490,245,340))
+cua6= Entity(model="cube",scale=(0,180,150), texture="cua6.jpg",collider="box",position=(-490,130,340))
+nom6= Entity(model="cube",scale=(0,40,100), texture="f.jpg",collider="box",position=(-490,20,340))
 
 # candelabros de los cuartos
 cande = Entity(model="candelabro.glb", scale=(50,50,50), collider='box',position=(0,500,0))
