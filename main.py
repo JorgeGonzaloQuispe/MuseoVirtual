@@ -7,10 +7,10 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 app = Ursina()
 
 #Gifs
-gif = "marinera.gif"
-gif2 = "contradanza.gif"
-gif3 = "tondero.gif"
-gif4 = "cielo.gif"
+gif = 'marinera.gif'
+gif2 = 'witiwiti.gif'
+gif3 = 'vals.gif'
+
 
 # Carga el archivo MP3
 audio = AudioSegment.from_mp3("musica.mp3")
@@ -91,10 +91,14 @@ wall_1_1_3.x = 0
 wall_1_1_3.z = -750
 wall_1_1_3.y = 0
 
+wall_1_1_4 = Entity( model='cube', scale=(350, 500, 10), color=color.white, texture = "des.png", collider='box')
+wall_1_1_4.x = -350/2
+wall_1_1_4.z = -505
+wall_1_1_4.y = 250
 
 
 # interior color cuartos 1 y 2 , cuartos izquierdos
-wall_1_1 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "cuartoizquierdo.jpg", collider='box')
+wall_1_1 = Entity(model='cube', scale=(350, 1000, 5), color=color.white, texture = "des2.png", collider='box')
 wall_1_1.x = -350/2
 wall_1_1.z = -505
 wall_1_1.y = 0
@@ -241,15 +245,15 @@ wall_2 = Entity(model='cube', scale=(10, 500, 805), color=color.white, texture =
 ##############################################################3
 #Cuarto inmersivo de danzas tipicas peruanas
 #Marinera
-plano_1 = Entity(model='plane', scale=(9.5, 9.5, 10) ,color=color.white, collider='box', position=(-245,235,-980))
-a = Animation(gif, parent=plano_1, rotation_y= 180, scale = (50,50,10)) 
+plano_1 = Entity(model='plane', scale=(9.5, 9.5, 10) ,color=color.white,position=(-245,235,-980))
+a = Animation(gif, parent=plano_1, rotation_y= 180, position=(0,0,0), scale = (50,50,10)) 
 
 #Contradanza
-plano_2 = Entity(model='plane', scale=(9.5, 9.5, 10),color=color.white, collider='box', position=(-10,235,-749))
+plano_2 = Entity(model='plane', scale=(9.5, 9.5, 10),color=color.white,position=(-10,235,-749))
 b = Animation(gif2, parent=plano_2, rotation_y= 90, position=(0,0,0), scale = (50, 50, 10)) 
 
 #Tondero
-plano_3 = Entity(model='plane', scale=(9.5, 9.5, 10),color=color.white, collider='box', position=(-490,235,-749))
+plano_3 = Entity(model='plane', scale=(9.5, 9.5, 10),color=color.white, position=(-490,235,-749))
 c = Animation(gif3, parent=plano_3, rotation_y= 270, position=(0,0,0), scale = (50, 50, 10)) 
 
 #Techo
