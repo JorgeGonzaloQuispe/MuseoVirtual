@@ -299,7 +299,7 @@ picture7_=Entity(model="cube",scale=(5,150,200), texture="petrolero.jpg",collide
 picture8_=Entity(model="cube",scale=(5,150,200), texture="ferroca.jpg",collider="box",position=(360,380,-506));picture8_.rotation_y = 90 
 picture9_=Entity(model="cube",scale=(5,250,300), texture="picture1.jpg",collider="box",position=(325,150,-499));picture9_.rotation_y = 90 
 picture8_=Entity(model="cube",scale=(5,210,140), texture="historiaa.jpg",collider="box",position=(80,370,-499));picture8_.rotation_y = 90+180
-picture8_=Entity(model="cube",scale=(5,171,300), texture="guerrapacifico.jpg",collider="box",position=(325,380,-499));picture8_.rotation_y = 90 
+picture8_=Entity(model="cube",scale=(5,171,300), texture="guerrapacifico.jpg",collider="box",position=(325,380,-499));picture8_.rotation_y = 90+360
 picture9_=Entity(model="cube",scale=(5,250,300), texture="telar.jpg",collider="box",position=(325,150,-506));picture9_.rotation_y = 90 
 
 app.run()
