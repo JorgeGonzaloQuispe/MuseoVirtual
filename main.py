@@ -284,14 +284,22 @@ Gastronomia_=Entity(model="cube",scale=(5,171,300), texture="gastronomia2.jpg",c
 # estatuas
 # Historia
 Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(15,15,15), collider='box',position=(100,-90,-930));Simon_Bolivar.rotation_y = 180 
-Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(16,16,16), collider='box',position=(100,140,-1190));Jose_San_Martin.rotation_y=160
+Jose_San_Martin=Entity(model="JoseSanMartin.glb", scale=(16,16,16), collider='box',position=(85,140,-1190));Jose_San_Martin.rotation_y=160
+ramon_castilla_=Entity(model="ramon_castilla.glb", scale=(1,1,1), collider='box',position=(400,150,-960));ramon_castilla_.rotation_y=-90
+Simon_Bolivar= Entity(model="SimonBolivar.glb", scale=(15,15,15), collider='box',position=(400,-95,-930));Simon_Bolivar.rotation_y = 180 
 
 # pinturas
-picture1_= Entity(model="cube",scale=(5,150,200), texture="picture1.jpg",collider="box",position=(140,380,-996)); picture1_.rotation_y = 90; 
+picture1_= Entity(model="cube",scale=(5,150,200), texture="republicaaaristocratica.jpg",collider="box",position=(140,380,-996)); picture1_.rotation_y = 90; 
 picture2_= Entity(model="cube",scale=(5,150,200), texture="picture2.jpg",collider="box",position=(360,380,-996));picture2_.rotation_y = 90
 picture3_=Entity(model="cube",scale=(5,150,200), texture="picture3.jpg",collider="box",position=(502,380,-856))
-picture4_=Entity(model="cube",scale=(5,150,200), texture="picture4.jpg",collider="box",position=(502,380,-636))
-picture5_=Entity(model="cube",scale=(5,150,200), texture="picture1.jpg",collider="box",position=(502,210,-856))
-picture6_=Entity(model="cube",scale=(5,150,200), texture="picture3.jpg",collider="box",position=(502,210,-636))
+picture4_=Entity(model="cube",scale=(5,150,200), texture="ferroca.jpg",collider="box",position=(502,380,-636))
+picture5_=Entity(model="cube",scale=(5,150,200), texture="confederacion.jpg",collider="box",position=(502,210,-856));picture5_.rotation_y = 180
+picture6_=Entity(model="cube",scale=(5,150,200), texture="chinainme.jpg",collider="box",position=(502,210,-636))
+picture7_=Entity(model="cube",scale=(5,150,200), texture="petrolero.jpg",collider="box",position=(140,380,-506));picture7_.rotation_y = 90 
+picture8_=Entity(model="cube",scale=(5,150,200), texture="ferroca.jpg",collider="box",position=(360,380,-506));picture8_.rotation_y = 90 
+picture9_=Entity(model="cube",scale=(5,250,300), texture="picture1.jpg",collider="box",position=(325,150,-499));picture9_.rotation_y = 90 
+picture8_=Entity(model="cube",scale=(5,210,140), texture="historiaa.jpg",collider="box",position=(80,370,-499));picture8_.rotation_y = 90+180
+picture8_=Entity(model="cube",scale=(5,171,300), texture="guerrapacifico.jpg",collider="box",position=(325,380,-499));picture8_.rotation_y = 90+360
+picture9_=Entity(model="cube",scale=(5,250,300), texture="telar.jpg",collider="box",position=(325,150,-506));picture9_.rotation_y = 90 
 
 app.run()
