@@ -302,4 +302,28 @@ picture8_=Entity(model="cube",scale=(5,210,140), texture="historiaa.jpg",collide
 picture8_=Entity(model="cube",scale=(5,171,300), texture="guerrapacifico.jpg",collider="box",position=(325,380,-499));picture8_.rotation_y = 90+360
 picture9_=Entity(model="cube",scale=(5,250,300), texture="telar.jpg",collider="box",position=(325,150,-506));picture9_.rotation_y = 90 
 
+
+foto1= Entity(model="cube",scale=(5,150,180), texture="foto1.jpg",collider="box",position=(-380,410,996));foto1.rotation_y = 90
+anun1= Entity(model="cube",scale=(5,100,160), texture="anuncio1.jpg",collider="box",position=(-380,280,996));anun1.rotation_y = 90
+foto2= Entity(model="cube",scale=(5,150,180), texture="foto2.jpg",collider="box",position=(-130,410,996));foto2.rotation_y = 90
+anun2= Entity(model="cube",scale=(5,100,160), texture="anuncio2.jpg",collider="box",position=(-130,280,996));anun2.rotation_y = 90
+foto3= Entity(model="cube",scale=(5,130,160), texture="foto3.jpg",collider="box",position=(-380,154,996));foto3.rotation_y = 90
+anun3= Entity(model="cube",scale=(5,50,140), texture="anuncio3.jpg",collider="box",position=(-380,43,996));anun3.rotation_y = 90
+foto4= Entity(model="cube",scale=(5,130,180), texture="foto4.jpg",collider="box",position=(-130,154,996));foto4.rotation_y = 90
+anun4= Entity(model="cube",scale=(5,50,160), texture="anuncio4.jpg",collider="box",position=(-130,43,996));anun4.rotation_y = 90
+foto5= Entity(model="cube",scale=(1,150,180), texture="foto5.jpg",collider="box",position=(-10,350,850))
+anun5= Entity(model="cube",scale=(1,150,200), texture="anuncio5.jpg",collider="box",position=(-10,180,850));anun5.rotation_y = 180
+foto5= Entity(model="cube",scale=(1,150,180), texture="foto6.jpg",collider="box",position=(-10,350,630))
+anun5= Entity(model="cube",scale=(1,150,200), texture="anuncio6.jpg",collider="box",position=(-10,180,630));anun5.rotation_y = 180
+extra=Entity(model="cube",scale=(1,80,150), texture="roma.jpg",collider="box",position=(-10,50,720));extra.rotation_y = 180
+
+foto6= Entity(model="cube",scale=(0,90,450), texture="literatura.jpg",collider="box",position=(-490,360,750))
+foto7= Entity(model="cube",scale=(0,90,450), texture="corrientes.jpg",collider="box",position=(-490,250,750))
+foto8= Entity(model="cube",scale=(0,90,100), texture="im1.jpg",collider="box",position=(-490,120,620))
+foto9= Entity(model="cube",scale=(0,90,100), texture="im2.jpg",collider="box",position=(-490,120,750))
+foto10= Entity(model="cube",scale=(0,90,100), texture="im3.jpg",collider="box",position=(-490,120,880))
+#anun6= Entity(model="cube",scale=(1,150,200), texture="anuncio5.jpg",collider="box",position=(-190,410,510));anun5.rotation_y = 90
+
+
+
 app.run()
